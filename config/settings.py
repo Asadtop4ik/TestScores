@@ -26,12 +26,7 @@ DEBUG = True
 
 ALLOWED_HOSTS = ['*']
 
-STATIC_URL = '/static/'
-STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 
-STATICFILES_DIRS = [
-    '/home/asadtop4ik/Python/EnglishLanguageProficiency/static',
-]
 
 # Application definition
 
@@ -155,6 +150,11 @@ SIMPLE_JWT = {
     'SLIDING_TOKEN_REFRESH_LIFETIME': timedelta(days=1),  # Lifespan of refresh tokens.
 }
 
+STATIC_URL = '/static/'
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
+
+MEDIA_URL = '/media/'
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
 
 DJOSER = {
